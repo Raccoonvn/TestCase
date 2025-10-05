@@ -29,6 +29,7 @@ function App() {
   // Функция для показа ошибки
   const showError = (msg) => {
     setErrorMessage(msg);
+    window.scrollTo({top: 50});
     setTimeout(() => setErrorMessage(''), 5000);
   };
 
