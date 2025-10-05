@@ -164,7 +164,9 @@ function App() {
   // Открытие формы редактирования и скролл к ней
   const openEditForm = (car) => {
     setEditingCar({ id: car.id, name: car.name, price: car.price });
-    editFormRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(() => {
+      editFormRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
   };
 
   const openMap = () => {
